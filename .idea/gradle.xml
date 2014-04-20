@@ -7,8 +7,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="D:\MyStuff\Android\QuestApp" />
-            <option value="D:\MyStuff\Android\QuestApp\MyApp" />
+            <option value="D:\MyStuff\Android\Myriad-Quest-App" />
+            <option value="D:\MyStuff\Android\Myriad-Quest-App\MyApp" />
           </set>
         </option>
       </GradleProjectSettings>

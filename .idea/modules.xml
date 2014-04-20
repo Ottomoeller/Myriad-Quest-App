@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyApp/MyApp.iml" filepath="$PROJECT_DIR$/MyApp/MyApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Myriad-Quest-App.iml" filepath="$PROJECT_DIR$/Myriad-Quest-App.iml" />
       <module fileurl="file://$PROJECT_DIR$/QuestApp.iml" filepath="$PROJECT_DIR$/QuestApp.iml" />
     </modules>
   </component>
