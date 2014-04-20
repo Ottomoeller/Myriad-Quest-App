@@ -1,12 +1,14 @@
 package questapp.myapp;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -15,10 +17,25 @@ public class MainActivity extends ActionBarActivity {
     /** Called when the user clicks the Send button */
     public void loginAs(View view) {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText editText = (EditText) findViewById(R.id.edit_login);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
+        EditText username = (EditText) findViewById(R.id.edit_username);
+        EditText password = (EditText) findViewById(R.id.edit_password);
+
+        if(username.getText().toString().equals("Lancelot") &&
+                password.getText().toString().equals("arthurDoesntKnow")){
+            Toast.makeText(getApplicationContext(), "Redirecting...",
+                    Toast.LENGTH_LONG).show();
+            intent.putExtra(EXTRA_MESSAGE, "Welcome");
+            startActivity(intent);
+        }  else {
+            Toast.makeText(getApplicationContext(), "Wrong Credentials",
+                    Toast.LENGTH_SHORT).show();
+            password.setHintTextColor(Color.RED);
+            username.setHintTextColor(Color.RED);
+        }
+//        String username = editUsername.getText().toString();
+//        String password = editPassword.getText().toString();
+//        intent.putExtra(EXTRA_MESSAGE, password);
+
     }
 
     @Override
