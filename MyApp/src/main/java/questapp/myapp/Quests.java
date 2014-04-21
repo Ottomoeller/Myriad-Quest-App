@@ -6,10 +6,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 
 
-public class DisplayQuestsActivity extends ActionBarActivity {
+public class Quests extends ActionBarActivity {
     public final static String EXTRA_MESSAGE2 = "questapp.myapp.MESSAGE";
 
     public void quest1Details(View view){
@@ -18,12 +17,12 @@ public class DisplayQuestsActivity extends ActionBarActivity {
     }
 
     public void quest2Details(View view){
-        Intent intent2 = new Intent(this, BanditsInTheWoodsActivity.class);
+        Intent intent2 = new Intent(this, SpecialDeliveryActivity.class);
         startActivity(intent2);
     }
 
     public void quest3Details(View view){
-        Intent intent3 = new Intent(this, BanditsInTheWoodsActivity.class);
+        Intent intent3 = new Intent(this, FilthyMongrelActivity.class);
         startActivity(intent3);
     }
 
@@ -35,7 +34,7 @@ public class DisplayQuestsActivity extends ActionBarActivity {
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE1);
 
         // Set the text view as the activity layout
-        setContentView(R.layout.activity_display_message);
+        setContentView(R.layout.activity_display_quests);
     }
 
 

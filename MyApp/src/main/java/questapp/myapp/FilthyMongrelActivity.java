@@ -1,5 +1,6 @@
 package questapp.myapp;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -14,7 +15,7 @@ public class FilthyMongrelActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
 
         Intent intent = getIntent();
-        String message = intent.getStringExtra(DisplayQuestsActivity.EXTRA_MESSAGE2);
+        String message = intent.getStringExtra(Quests.EXTRA_MESSAGE2);
 
         setContentView(R.layout.activity_filthy_mongrel);
     }

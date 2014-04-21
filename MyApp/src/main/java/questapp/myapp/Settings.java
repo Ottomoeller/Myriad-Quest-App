@@ -1,22 +1,17 @@
 package questapp.myapp;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class SpecialDeliveryActivity extends ActionBarActivity {
+public class Settings extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(Quests.EXTRA_MESSAGE2);
-
-        setContentView(R.layout.activity_special_delivery);
+        setContentView(R.layout.activity_settings);
     }
 
 
@@ -24,7 +19,7 @@ public class SpecialDeliveryActivity extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.special_delivery, menu);
+        getMenuInflater().inflate(R.menu.settings, menu);
         return true;
     }
 

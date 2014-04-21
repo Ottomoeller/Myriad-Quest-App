@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="questapp.myapp.DisplayQuestsActivity"
+            android:name="questapp.myapp.Quests"
             android:label="@string/title_activity_display_message"
             android:parentActivityName="questapp.myapp.MainActivity" >
             <meta-data
@@ -31,15 +31,15 @@
         <activity
             android:name="questapp.myapp.BanditsInTheWoodsActivity"
             android:label="@string/title_activity_bandits_in_the_woods"
-            android:parentActivityName="questapp.myapp.DisplayQuestsActivity" >
+            android:parentActivityName="questapp.myapp.Quests" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="DisplayMessageActivity" />
         </activity>
         <activity
-            android:name=".SpecialDeliveryActivity"
+            android:name="questapp.myapp.SpecialDeliveryActivity"
             android:label="@string/title_activity_special_delivery"
-            android:parentActivityName="questapp.myapp.DisplayQuestsActivity" >
+            android:parentActivityName="questapp.myapp.Quests" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="DisplayQuestsActivity" />
@@ -47,10 +47,18 @@
         <activity
             android:name="questapp.myapp.FilthyMongrelActivity"
             android:label="@string/title_activity_filthy_mongrel"
-            android:parentActivityName="questapp.myapp.DisplayQuestsActivity" >
+            android:parentActivityName="questapp.myapp.Quests" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="DisplayQuestsActivity" />
+        </activity>
+        <activity
+            android:name="questapp.myapp.Settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="questapp.myapp.Quests" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="Quests" />
         </activity>
     </application>
 

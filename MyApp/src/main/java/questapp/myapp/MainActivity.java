@@ -17,7 +17,7 @@ public class MainActivity extends ActionBarActivity {
 
     /** Called when the user clicks the Send button */
     public void loginAs(View view) {
-        Intent intent = new Intent(this, DisplayQuestsActivity.class);
+        Intent intent = new Intent(this, Quests.class);
         EditText username = (EditText) findViewById(R.id.edit_username);
         EditText password = (EditText) findViewById(R.id.edit_password);
 
