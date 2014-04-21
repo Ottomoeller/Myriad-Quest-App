@@ -1,5 +1,6 @@
 package questapp.myapp;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
@@ -12,23 +13,25 @@ import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
-    public final static String EXTRA_MESSAGE = "questapp.myapp.MESSAGE";
+    public final static String EXTRA_MESSAGE1 = "questapp.myapp.MESSAGE";
 
     /** Called when the user clicks the Send button */
     public void loginAs(View view) {
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        Intent intent = new Intent(this, DisplayQuestsActivity.class);
         EditText username = (EditText) findViewById(R.id.edit_username);
         EditText password = (EditText) findViewById(R.id.edit_password);
 
-        if(username.getText().toString().equals("Lancelot") &&
-                password.getText().toString().equals("arthurDoesntKnow")){
+        if(username.getText().toString().equals("Lancelot") && password.getText().toString().equals("arthurDoesntKnow")){
             Toast.makeText(getApplicationContext(), "Redirecting...",
                     Toast.LENGTH_LONG).show();
-            intent.putExtra(EXTRA_MESSAGE, "Welcome");
+            intent.putExtra(EXTRA_MESSAGE1, "Quest List");
             startActivity(intent);
         }  else {
-            Toast.makeText(getApplicationContext(), "Wrong Credentials",
-                    Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getApplicationContext(), Toast.LENGTH_SHORT).show();
+            AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);
+            dlgAlert.setMessage("wrong password or username");
+            dlgAlert.setTitle("Error Message...");
+            dlgAlert.create().show();
             password.setHintTextColor(Color.RED);
             username.setHintTextColor(Color.RED);
         }

@@ -21,12 +21,36 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="questapp.myapp.DisplayMessageActivity"
+            android:name="questapp.myapp.DisplayQuestsActivity"
             android:label="@string/title_activity_display_message"
-            android:parentActivityName="questapp.myapp.MainActivity">
+            android:parentActivityName="questapp.myapp.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.myfirstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="questapp.myapp.BanditsInTheWoodsActivity"
+            android:label="@string/title_activity_bandits_in_the_woods"
+            android:parentActivityName="questapp.myapp.DisplayQuestsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="DisplayMessageActivity" />
+        </activity>
+        <activity
+            android:name=".SpecialDeliveryActivity"
+            android:label="@string/title_activity_special_delivery"
+            android:parentActivityName="questapp.myapp.DisplayQuestsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="DisplayQuestsActivity" />
+        </activity>
+        <activity
+            android:name="questapp.myapp.FilthyMongrelActivity"
+            android:label="@string/title_activity_filthy_mongrel"
+            android:parentActivityName="questapp.myapp.DisplayQuestsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="DisplayQuestsActivity" />
         </activity>
     </application>
 
