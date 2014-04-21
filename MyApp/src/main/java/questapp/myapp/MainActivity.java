@@ -35,9 +35,6 @@ public class MainActivity extends ActionBarActivity {
             password.setHintTextColor(Color.RED);
             username.setHintTextColor(Color.RED);
         }
-//        String username = editUsername.getText().toString();
-//        String password = editPassword.getText().toString();
-//        intent.putExtra(EXTRA_MESSAGE, password);
 
     }
 

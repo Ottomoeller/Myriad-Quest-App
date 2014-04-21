@@ -3,8 +3,13 @@ package questapp.myapp;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.text.method.ArrowKeyMovementMethod;
+import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.ScrollView;
+import android.widget.TextView;
 
 
 public class BanditsInTheWoodsActivity extends ActionBarActivity {
@@ -15,6 +20,10 @@ public class BanditsInTheWoodsActivity extends ActionBarActivity {
 
         Intent intent = getIntent();
         String message = intent.getStringExtra(DisplayQuestsActivity.EXTRA_MESSAGE2);
+
+//        setContentView(R.layout.activity_bandits_in_the_woods);
+//        TextView textview= (TextView) findViewById(R.id.quest1);
+//        textview.setMovementMethod(ArrowKeyMovementMethod.getInstance());
 
         setContentView(R.layout.activity_bandits_in_the_woods);
     }
