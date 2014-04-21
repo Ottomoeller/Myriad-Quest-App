@@ -21,29 +21,34 @@
     <string name="quest1Title">Bandits in the Woods\n</string>
     <string name="quest1QuestGiver">\n\nPosted By: HotDogg The Bounty Hunter</string>
     <string name="quest1Details">
-        \n\n\n\n<b>Reward:</b> 5000 Gold, 200xp\n\n\n
-        The famed bounty hunter HotDog has requested the aid of a hero in ridding the woods of
-        terrifying bandits who have thus far eluded his capture, as he is actually a dog, and
-        cannot actually grab things more than 6 feet off the ground.</string>
+        \n\n\n\n<b>Reward:</b> 1000 Gold, 500xp\n\n\n
+        Sir Jimmy was once the fastest man in the kingdom,
+        brave as any soldier and wise as a king. Unfortunately,
+        age catches us all in the end, and he has requested that I,
+        his personal scribe, find a hero to deliver a package of particular importance--and protect
+        it with their life.",</string>
 
-    <string name="quest2Title">Special Delivery\n</string>
-    <string name="quest2QuestGiver">\n\nPosted By: Sir Jimmy The Swift</string>
+    <string name="quest2Title">Bandits in the Woods\n</string>
+    <string name="quest2QuestGiver">\n\nPosted By: HotDogg The Bounty Hunter</string>
     <string name="quest2Details">
         \n\n\n\n<b>Reward:</b> 1000 Gold, 500xp\n\n\n
         Sir Jimmy was once the fastest man in the kingdom,
         brave as any soldier and wise as a king. Unfortunately,
         age catches us all in the end, and he has requested that I,
         his personal scribe, find a hero to deliver a package of particular importance--and protect
-        it with their life.</string>
+        it with their life.",</string>
 
 
-    <string name="quest3Title">Filthy Mongrel\n</string>
-    <string name="quest3QuestGiver">\n\nPosted By: Prince Jack, The Iron Horse</string>
+    <string name="quest3Title">Bandits in the Woods\n</string>
+    <string name="quest3QuestGiver">\n\nPosted By: HotDogg The Bounty Hunter</string>
     <string name="quest3Details">
-        \n\n\n\n<b>Reward:</b> 10000 Gold, 5000xp\n\n\n
-       That strange dog that everyone is treating like a bounty-hunter must go.
-        By the order of Prince Jack, that smelly, disease ridden mongrel must be
-        removed from our streets by any means necessary. He is disrupting the lives
-        of ordinary citizens, and it's just really weird. Make it gone.</string>
+        \n\n\n\n<b>Reward:</b> 1000 Gold, 500xp\n\n\n
+        Sir Jimmy was once the fastest man in the kingdom,
+        brave as any soldier and wise as a king. Unfortunately,
+        age catches us all in the end, and he has requested that I,
+        his personal scribe, find a hero to deliver a package of particular importance--and protect
+        it with their life.",</string>
+
+
 
 </resources>
